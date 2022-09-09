@@ -1,0 +1,34 @@
+Running SLURM prolog script on pink51.cluster.local
+===============================================================================
+Job started on Tue Sep  6 12:42:50 BST 2022
+Job ID          : 1711249
+Job name        : train_control_policy
+WorkDir         : /mainfs/lyceum/oeg1n18/RL_FES_ARRAYS/rl_fes_array_control/FES_DuelingDDQN
+Command         : /mainfs/lyceum/oeg1n18/RL_FES_ARRAYS/rl_fes_array_control/FES_DuelingDDQN/runfile.slurm
+Partition       : lyceum
+Num hosts       : 1
+Num cores       : 2
+Num of tasks    : 1
+Hosts allocated : pink51
+Job Output Follows ...
+===============================================================================
+==============================================================================
+Running epilogue script on pink51.
+
+Submit time  : 2022-09-06T12:15:46
+Start time   : 2022-09-06T12:42:49
+End time     : 2022-09-06T12:42:51
+Elapsed time : 00:00:02 (Timelimit=02:00:00)
+
+Job ID: 1711249
+Cluster: i5
+User/Group: oeg1n18/fp
+State: FAILED (exit code 2)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:00:04 core-walltime
+Job Wall-clock time: 00:00:02
+Memory Utilized: 2.57 MB
+Memory Efficiency: 0.00% of 0.00 MB
+

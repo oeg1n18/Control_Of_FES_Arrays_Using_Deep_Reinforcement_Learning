@@ -1,0 +1,5 @@
+#!/bin/bash
+echo hello world
+
+scp -r oeg1n18@iridis5_b.soton.ac.uk:/lyceum/oeg1n18/RL_FES_ARRAYS/rl_fes_array_control/FES_AC /Users/olivergrainge/UniOnedrive/Uni_year_three/rl_fes_array_control
+
