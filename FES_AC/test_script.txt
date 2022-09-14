@@ -1,0 +1,12 @@
+#!/bin/bash
+
+scp -r /Users/olivergrainge/UniOnedrive/Uni_year_three/rl_fes_array_control oeg1n18@iridis5_b.soton.ac.uk:/lyceum/oeg1n18/RL_FES_ARRAYS
+
+ssh -t oeg1n18@iridis5_a.soton.ac.uk '. ~/.bashrc; cd /mainfs/lyceum/oeg1n18/RL_FES_ARRAYS/rl_fes_array_control/FES_DDQN;
+                                      module load cuda/11.7;
+                                      module load python/3.9.7;
+                                      pip install tensorflow==2.9.0 gym;
+                                      pip3 install tensorflow_probability;
+                                      sinteractive -p lyceum --gres=gpu:4;
+                                      python DDQN.py;
+                                      exec bash'

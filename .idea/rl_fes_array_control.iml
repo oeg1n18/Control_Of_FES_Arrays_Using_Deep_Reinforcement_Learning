@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (tf_env)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/rl_algs/examples/saved_agents" />
+        <option value="$MODULE_DIR$/rl_algs/agents" />
+        <option value="$MODULE_DIR$/rl_algs/drivers" />
+        <option value="$MODULE_DIR$/rl_algs/environments" />
+        <option value="$MODULE_DIR$/rl_algs/examples" />
+        <option value="$MODULE_DIR$/rl_algs/Networks" />
+        <option value="$MODULE_DIR$/rl_algs/observers" />
+        <option value="$MODULE_DIR$/rl_algs/replay_buffers" />
+        <option value="$MODULE_DIR$/rl_algs" />
+      </list>
+    </option>
+  </component>
+</module>
