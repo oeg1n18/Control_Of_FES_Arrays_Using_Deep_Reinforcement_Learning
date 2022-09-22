@@ -33,24 +33,30 @@ ucb_std = np.array([np.std(ucb[i:i+VAR_RANGE]) for i in range(ucb.size - MEAN_RA
 
 x = np.arange(constant_epsilon_mu.size)
 
-#ax1.fill_between(x, constant_epsilon_mu, y2=constant_epsilon_mu + constant_epsilon_std, color="red", alpha=0.2)
-#ax1.fill_between(x, constant_epsilon_mu, y2=constant_epsilon_mu - constant_epsilon_std, color="red", alpha=0.2)
-ax1.plot(x, constant_epsilon_mu, label="Constant Epsilon")
+ax1.fill_between(x, constant_epsilon_mu, y2=constant_epsilon_mu + 0.25*constant_epsilon_std, color="red", alpha=0.1)
+ax1.fill_between(x, constant_epsilon_mu, y2=constant_epsilon_mu - 0.25*constant_epsilon_std, color="red", alpha=0.1)
+ax1.plot(x, constant_epsilon_mu, label="Constant Epsilon", color="red")
 
-#ax1.fill_between(x, exponential_epsilon_mu, y2=exponential_epsilon_mu + exponential_epsilon_std, color="blue", alpha=0.2)
-#ax1.fill_between(x, exponential_epsilon_mu, y2=exponential_epsilon_mu - exponential_epsilon_std, color="blue", alpha=0.2)
-ax1.plot(x, exponential_epsilon_mu, label="Exponential Epsilon")
+ax1.fill_between(x, exponential_epsilon_mu, y2=exponential_epsilon_mu + 0.25*exponential_epsilon_std, color="blue", alpha=0.1)
+ax1.fill_between(x, exponential_epsilon_mu, y2=exponential_epsilon_mu - 0.25*exponential_epsilon_std, color="blue", alpha=0.1)
+ax1.plot(x, exponential_epsilon_mu, label="Exponential Epsilon", color="blue")
 
-#ax1.fill_between(x, linear_epsilon_mu, y2=linear_epsilon_mu + linear_epsilon_std, color="green", alpha=0.2)
-#ax1.fill_between(x, linear_epsilon_mu, y2=linear_epsilon_mu - linear_epsilon_std, color="green", alpha=0.2)
-ax1.plot(x, linear_epsilon_mu, label="Linear Epsilon")
+ax1.fill_between(x, linear_epsilon_mu, y2=linear_epsilon_mu + 0.25*linear_epsilon_std, color="green", alpha=0.1)
+ax1.fill_between(x, linear_epsilon_mu, y2=linear_epsilon_mu - 0.25*linear_epsilon_std, color="green", alpha=0.1)
+ax1.plot(x, linear_epsilon_mu, label="Linear Epsilon", color="green")
 ax1.legend()
 ax1.set_xlabel("Training Round")
 ax1.set_ylabel("Reward")
 ax1.set_title("Greedy Bandits")
 
-ax2.plot(x, thompson_mu, label="Thompson Sampling")
-ax2.plot(x, ucb_mu, label="UCB Sampling")
+ax2.fill_between(x, thompson_mu, y2=thompson_mu + 0.25*thompson_std, color="orange", alpha=0.1)
+ax2.fill_between(x, thompson_mu, y2=thompson_mu - 0.25*thompson_std, color="orange", alpha=0.1)
+ax2.plot(x, thompson_mu, label="Thompson Sampling", color="orange")
+
+ax2.fill_between(x, ucb_mu, y2=ucb_mu + 0.5*ucb_std, color="purple", alpha=0.1)
+ax2.fill_between(x, ucb_mu, y2=ucb_mu - 0.5*ucb_std, alpha=0.1, color="purple")
+ax2.plot(x, ucb_mu, label="UCB Sampling", color="purple")
+
 ax2.set_xlabel("Training Round")
 ax2.set_ylabel("Reward")
 ax2.legend()
